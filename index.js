@@ -1,4 +1,3 @@
-// require necessary top-level modules
 const express = require("express");
 const bodyParser = require("body-parser");
 const mustacheExpress = require("mustache-express");

@@ -18,12 +18,17 @@
   "homepage": "https://github.com/sertana/Project2.GA#readme",
   "dependencies": {
     "axios": "^0.17.1",
-    "body": "^5.1.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
     "express": "^4.16.2",
+    "express-session": "^1.15.6",
     "moment": "^2.20.1",
     "morgan": "^1.9.0",
     "mustache-express": "^1.2.5",
     "parser": "^0.1.4",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
     "pg-promise": "^7.4.1"
   }
 }
