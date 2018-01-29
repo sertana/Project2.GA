@@ -1,0 +1,29 @@
+{
+  "name": "project2.ga",
+  "version": "1.0.0",
+  "description": "this is my read me file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sertana/Project2.GA.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sertana/Project2.GA/issues"
+  },
+  "homepage": "https://github.com/sertana/Project2.GA#readme",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "body": "^5.1.0",
+    "express": "^4.16.2",
+    "moment": "^2.20.1",
+    "morgan": "^1.9.0",
+    "mustache-express": "^1.2.5",
+    "parser": "^0.1.4",
+    "pg-promise": "^7.4.1"
+  }
+}

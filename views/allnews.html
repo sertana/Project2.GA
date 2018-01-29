@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>All the Headlines</title>
+</head>
+<body>
+<h1>The most recent sports headlines</h1>
+
+
+<ul>
+                <!-- iterate through all the trains here, displaying the name of the train
+                and the abbreviated status.  Additionally, create a link that leads to 
+                the individual show page for that train. -->
+                {{#allNewsData}}
+                <div> 
+                    <p>
+                      <ul>
+                      <a href={{{url}}}>{{{title}}}</a><button type="submit">Add to my List</button>
+                      </ul>
+                    </p>
+                </div>
+                {{/allNewsData}}
+            </ul>
+        <a href="/mylist">My List</a>
+</body>
+</html>
