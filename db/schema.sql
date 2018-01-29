@@ -6,4 +6,3 @@ CREATE TABLE news (
   url VARCHAR(255)
 );
 
-DROP TABLE IF EXISTS users;
