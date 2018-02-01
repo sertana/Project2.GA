@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const mustacheExpress = require("mustache-express");
+const morgan = require("morgan");
 
 // other consts
 
@@ -30,6 +31,8 @@ app.use(express.static(__dirname + "/public"));
 
 // ------------------------------------------------------------
 // Hook up top-level routes
+
+app.use(morgan("dev"));
 
 // get the trains router (the export of the trains controller file)
 const newsRouter = require("./controllers/sports.js");

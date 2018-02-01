@@ -2,8 +2,30 @@
 <html>
 <head>
   <title>My LIST</title>
+    <script src="/js/jquery-3.3.1.min.js"></script>
+  <script src="/js/script.js"></script>
 </head>
 <body>
 <h1>My List to Read</h1>
+<ul>
+                <!-- iterate through all the headlines here, displaying the headline as a link
+               to the article. -->
+                {{#allMyNewsData}}
+                <div> 
+                    <p>
+                      <ul>
+                      <a href={{{url}}}>{{{title}}}</a><br>
+                      <form method="post" class='delete'>
+                      <button type='submit' data-id = "{{id}}">Delete from List</button>
+                      <input type ='hidden' name='url' value={{url}}>
+                      <input type ='hidden' name='title' value={{title}}>
+                    </form>
+                    <input type ='checkbox' class='check' data-id='{{id}}' {{{checkboxHtml}}}>Read<br>
+                      </ul>
+                    </p>
+                </div>
+                {{/allMyNewsData}}
+            </ul>
+
 </body>
 </html>

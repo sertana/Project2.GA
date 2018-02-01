@@ -8,7 +8,7 @@ const cn = {
   // It's the port for pgpromise - not the port we're
   // serving our HTTP responses from
   port: 5432,
-  database: "news",
+  database: "News",
   // change this to your user name
   // (type 'whoami' into the terminal if there's any doubt)
   user: "student_19"

@@ -2,20 +2,26 @@
 <html>
 <head>
   <title>All the Headlines</title>
+    <script src="/js/jquery-3.3.1.min.js"></script>
+  <script src="/js/script.js"></script>
 </head>
 <body>
 <h1>The most recent sports headlines</h1>
 
 
 <ul>
-                <!-- iterate through all the trains here, displaying the name of the train
-                and the abbreviated status.  Additionally, create a link that leads to 
-                the individual show page for that train. -->
+                <!-- iterate through all the headlines here, displaying the headline as a link
+               to the article. -->
                 {{#allNewsData}}
                 <div> 
                     <p>
                       <ul>
-                      <a href={{{url}}}>{{{title}}}</a><br><button type='submit' class='add'>Add to my List</button>
+                      <a href={{{url}}}>{{{title}}}</a><br>
+                      <form method="post" class='add'>
+                      <button type='submit' >Add to my List</button>
+                      <input type ='hidden' name='url' value="{{url}}">
+                      <input type ='hidden' name='title' value="{{title}}">
+                    </form>
                       </ul>
                     </p>
                 </div>
