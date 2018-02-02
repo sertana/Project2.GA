@@ -34,7 +34,7 @@ app.use(express.static(__dirname + "/public"));
 
 app.use(morgan("dev"));
 
-// get the trains router (the export of the trains controller file)
+// get the news router (the export of the sports controller file)
 const newsRouter = require("./controllers/sports.js");
 // hook it up to the app
 app.use("/allnews", newsRouter);

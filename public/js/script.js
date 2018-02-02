@@ -9,7 +9,7 @@ $(document).ready(function() {
       data: data,
       success: function(data) {
         console.log("data recieved", data);
-        window.location.href = "/allnews/saved";
+        window.location.href = "/allnews";
       },
       error: function(xhr, status, error) {}
     });
@@ -48,3 +48,5 @@ $(document).ready(function() {
     });
   });
 });
+
+

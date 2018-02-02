@@ -13,7 +13,7 @@
                 {{#allMyNewsData}}
                 <div> 
                     <p>
-                      <ul>
+                      <ol>
                       <a href={{{url}}}>{{{title}}}</a><br>
                       <form method="post" class='delete'>
                       <button type='submit' data-id = "{{id}}">Delete from List</button>
@@ -21,11 +21,11 @@
                       <input type ='hidden' name='title' value={{title}}>
                     </form>
                     <input type ='checkbox' class='check' data-id='{{id}}' {{{checkboxHtml}}}>Read<br>
-                      </ul>
+                      </ol>
                     </p>
                 </div>
                 {{/allMyNewsData}}
             </ul>
-
+<a href="/allnews">To Headlines</a>
 </body>
 </html>
