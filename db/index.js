@@ -14,6 +14,6 @@ const cn = {
   user: "student_19"
 };
 
-const db = pgp(cn);
+const db = pgp(process.env.DATABASE_URL || cn);
 
 module.exports = db;

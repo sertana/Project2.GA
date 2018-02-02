@@ -1,3 +1,4 @@
+//what happens when the add to the list button is clicked
 $(document).ready(function() {
   $(".add").submit(function(e) {
     e.preventDefault();
@@ -15,6 +16,8 @@ $(document).ready(function() {
     });
   });
 });
+
+//what happens when the delete from list is clicked
 $(document).ready(function() {
   $(".delete").click(function(e) {
     e.preventDefault();
@@ -31,7 +34,7 @@ $(document).ready(function() {
     });
   });
 });
-
+//what happens when the checkbox is clicked.part of the code was written with the help of tims gardner
 $(document).ready(function() {
   $(".check").click(function(e) {
     e.preventDefault();
@@ -48,5 +51,3 @@ $(document).ready(function() {
     });
   });
 });
-
-
