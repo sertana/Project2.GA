@@ -2,12 +2,13 @@
 <html>
 <head>
   <title>All the Headlines</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
     <script src="/js/jquery-3.3.1.min.js"></script>
   <script src="/js/script.js"></script>
 </head>
 <body>
 <h1>The most recent sports headlines</h1>
-{{time}}
+<h2>{{time}}</h2>
 
 <ul>
                 <!-- iterate through all the headlines here, displaying the headline as a link
@@ -27,6 +28,6 @@
                 </div>
                 {{/allNewsData}}
             </ul>
-        <a href="/allnews/saved">My List</a>
+        <a href="/allnews/saved" class="tabs">My List</a>
 </body>
 </html>
